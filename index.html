@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+    <head>
+        <!--meta informations-->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta property="og:title" content="Learn Arabic - Reboot Your Heart">
+
+        <!--Title of the Webpage-->
+        <title>Learn Arabic - Reboot Your Heart</title>
+
+        <!--Bootstrap links-->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
+
+        <!-- Add font awesome icon library for social media icons-->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+        <!--My css and favicon links-->
+        <link href="styles.css" rel="stylesheet">
+        <link rel="icon" type="image/x-icon" href="favicon.ico">
+
+        <!--Java script for searching arabic meaning of english words, social media non-functional link alert messages-->
+        <script>
+            document.addEventListener("DOMContentLoaded", function() {
+                // Prevent the form from submitting
+                document.querySelector('#dictSearch').addEventListener('submit', function(event) {
+                    event.preventDefault();
+
+                    // Get the value of the input field
+                    let word = document.querySelector('#term').value;
+
+                    // Construct the URL adding the search term
+                    let url = "https://dictionary.cambridge.org/dictionary/english-arabic/" + word;
+
+                    // Navigate to the constructed URL in a new tab
+                    window.open(url, '_blank');
+                });
+
+                // Alert messages for non-functional social media icons
+                document.querySelector('#facebook').addEventListener('mouseup', function(e) {
+                    e.preventDefault();
+                    alert('Not added yet!');
+                });
+
+                document.querySelector('#twitter').addEventListener('mouseup', function(e) {
+                    e.preventDefault();
+                    alert('Not added yet!');
+
+                });
+            });
+        </script>
+
+    </head>
+
+    <!--body of the webpage starts here-->
+
+    <body>
+        <!--Setup and Introductory part starts here-->
+        <header>
+            <!--Title with background image and subhead-->
+            <div class="header">
+                <br><br>
+                <h1>Learn Arabic</h1><br>
+                <h1>Reboot Your Heart</h1>
+                <br><br>
+                <p id="subhead">Learn - Share - Excite together</p>
+                <br><br><br><br>
+            </div>
+
+            <!--Navigation bar including search form styled by bootstrap-->
+            <ul>
+                <li><a class="active" href="index.html">Home</a></li>
+                <li><a href="articles.html">Articles</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="about.html">About</a></li>
+                <li style="float: right;"><form id="dictSearch" class="d-flex" role="search" style="width: 360px;">
+                    <input id="term" class="form-control me-2" type="search" placeholder="English-Arabic..." aria-label="Search" style="height: 58px;">
+                    <button class="btn btn-outline-success" type="submit">Search</button>
+                </form></li>
+            </ul>
+
+        </header>
+
+        <!--Start of Main Part of the body-->
+        <main>
+            <div class="row">
+                <!--Add the left column with 75% of the screen width-->
+                <div class="leftcolumn">
+                    <!--Introductory Article starts here-->
+                    <article class="card">
+                        <h2>Why Learn Arabic?</h2>
+                        <h5>By Montclair State University</h5>
+                        <img class="article_image" src="arabic00004.jpg" alt="arabic calligraphy">
+                        <h6>Employment Opportunities</h6>
+                        <p>
+                            With knowledge of the Arabic language and culture comes many opportunities for your future. It is especially beneficial for those studying Political Science, Criminal Justice, Business, Education, Journalism, Law, Linguistics, Social Work, Religious Studies, African Studies, Comparative Literature and many more.
+                        </p>
+                        <p>
+                            Those who study Arabic can find careers in a variety of fields, including Journalism, Business, Education, Finance and Banking, Translation and Interpretation, Consulting, Foreign Service and Intelligence and many more. Arabic would provide an advantage if one decided to work for the FBI, as only 1% know any Arabic.
+                        </p>
+
+                        <h6>Get hired by international organizations</h6>
+                        <p>
+                            Many international organizations and NGOs such as the United Nations, World Bank and USAID are in need of Arabic speakers and those with an understanding of the Arab Culture.
+                        </p>
+
+                        <h6>Business opportunities</h6>
+                        <p>
+                            When it comes to trade, Arabic-speaking nations are a fast-growing market, and, because of this, initiatives to integrate the Arab world into the global economy are opening up many potential new business opportunities. Along with its rapidly growing population, the Arab region provides a large export market for goods and services.
+                        </p>
+                        <h6>Scholarships and grants</h6>
+                        <p>
+                            Since the U.S. has designated Arabic as a language of strategic importance, the financial incentives for learning Arabic are much greater than you would think. Many scholarships and learning opportunities are promoted by the National Strategic Language Initiative, for learning Arabic and other languages deemed critical. These can cover your expenses and support you for a range of courses from beginning to advanced, as well as study abroad programs, intensive instruction opportunities, teacher exchanges and professional development.
+                        </p>
+                        <!--Link to the source webpage-->
+                        <a href="https://www.montclair.edu/modern-languages-and-literatures/programs-of-study/arabic/why-study-arabic/" target="_blank">(Courtesy: www.montclair.edu)</a>
+
+                    </article>
+
+                </div>
+
+                <!--Add the right column with 25% of the screen width-->
+                <div class="rightcolumn">
+                    <!--Importance of Arabic written in Arabic starts here-->
+                    <section class="card arabic">
+                        <h2 style="color: powderblue; text-align: center;">أهمية اللغة العربية</h2>
+                        <br>
+                        <img id="roundpic" alt="Importance of Arabic" src="imp_arabic.png" style="display: block; margin-left: auto; margin-right: auto;">
+                        <br>
+                        <p style="padding-right: 10px; font-size: large;">
+                            تعد اللغة العربية أقدم اللغات الحية على وجه الأرض، و على اختلاف بين الباحثين حول عمر هذه اللغة؛ لا نجد شكاً في أن العربية التي نستخدمها اليوم أمضت ما يزيد على ألف وستمائة سنة. مذ عصور الإسلام الأولى انتشرت العربية في معظم أرجاء المعمورة وبلغت ما بلغه الإسلام وارتبطت بحياة المسلمين فأصبحت لغة العلم و الأدب والسياسة و الحضارة فضلاً عن كونها لغة الدين والعبادة.
+                        </p>
+                        <a style="direction: ltr; text-align: left;" href="https://www.arabicforall.net/ar/post/6" target="_blank">(Courtesy: www.arabicforall.net)</a>
+                    </section>
+
+                    <!--Adding links to important websites for learning Arabic-->
+                    <section class="card">
+                        <h3>Popular Websites</h3>
+                        <h5><a href="https://www.almaany.com/en/dict/ar-en/" target="_blank" rel="noopener noreferrer">Almaany</a></h5>
+                        <h5><a href="http://learning.aljazeera.net/arabic" target="_blank" rel="noopener noreferrer">AlJazeera Learning</a></h5>
+                        <h5><a href="http://arabic.desert-sky.net/grammar.html" target="_blank" rel="noopener noreferrer">Desert Sky</a></h5>
+
+                    </section>
+
+                    <!--Section for social media links-->
+                    <section class="card">
+                        <h3>Follow Me</h3>
+                        <!-- Add font awesome icons -->
+                        <a href="https://www.youtube.com/channel/UCU6RmvVS42P6LG1bvfzDFsg" class="fa fa-youtube" target="_blank"> </a>
+                        <a id="facebook" class="fa fa-facebook"> </a>
+                        <a id="twitter" class="fa fa-twitter"> </a>
+                    </section>
+                </div>
+            </div>
+
+        </main>
+
+        <!--Start of Footer part of the body-->
+        <footer>
+            <div class="footer">
+                <h6>&copy; All rights reserved</h6>
+            </div>
+        </footer>
+
+    </body>
+
+</html>

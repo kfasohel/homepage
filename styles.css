@@ -1,0 +1,202 @@
+/* Add general styling for the body */
+body {
+    margin: 0;
+    background-color: hsla(231, 15%, 18%, 1.0);
+    color: lightgray;
+    font-family: Verdana, sans-serif;
+}
+
+/* Add styling for header/hero section */
+.header {
+    padding: 60px;
+    text-align: center;
+    color: seashell;
+    font-style: bold;
+    background-image: url("oasis.jpeg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.header h1 {
+    display: inline-block;
+    font-size: 28px;
+    background-color: hsla(202, 100%, 68%, 0.50);
+    border-radius: 10px;
+}
+
+p#subhead {
+    display: inline-block;
+    background-color: hsla(202, 100%, 68%, 0.30);
+    border-radius: 10px;
+    font-size: 20px;
+    color: rgb(33, 70, 172);
+}
+
+h6 {
+    font-style: bold;
+    color: cornflowerblue
+}
+
+/* Add styling for list items to make it a navigation bar */
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: hsl(222, 7%, 27%);
+
+}
+
+li {
+    float: left;
+}
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 16px 16px;
+    text-decoration: none;
+}
+
+li a:hover {
+    background-color: #f3e5d0;
+}
+
+.active {
+    background-color: rgb(4, 84, 31);
+}
+
+/* Add styling for article images */
+img.article_image {
+    width: 100%;
+    height: 300px;
+    padding: 20px;
+}
+
+/* Add round effect for images */
+img#roundpic {
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    margin-left: 20px;
+    align-items: center;
+}
+
+
+/* Create two unequal columns that floats next to each other */
+/* Left column */
+.leftcolumn {
+    float: left;
+    width: 75%;
+    padding-left: 20px;
+}
+
+/* Right column */
+.rightcolumn {
+    float: left;
+    width: 25%;
+    padding-left: 20px;
+}
+
+
+/* Add a card effect for articles */
+.card {
+    padding: 20px;
+    margin-top: 20px;
+    background-color: transparent;
+    border-style: none;
+}
+
+/* Clear floats after the columns */
+.row::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 800px) {
+
+    .leftcolumn,
+    .rightcolumn {
+        width: 100%;
+        padding: 2% 5%;
+    }
+}
+
+/* Add styling for social media icons */
+.fa {
+    padding: 10px;
+    font-size: 20px;
+    width: 40px;
+    text-align: center;
+    text-decoration: none;
+    margin: 5px 2px;
+    border-radius: 50%;
+}
+
+.fa:hover {
+    opacity: 0.7;
+}
+
+.fa-facebook {
+    background: #3B5998;
+    color: white;
+}
+
+.fa-twitter {
+    background: #55ACEE;
+    color: white;
+}
+
+.fa-youtube {
+    background: #bb0000;
+    color: white;
+}
+
+/* Add styling for form input items in the contact me page */
+input[type=text],
+input[type=email],
+textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+}
+
+input[type=submit] {
+    background-color: #04AA6D;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+input[type=submit]:hover {
+    background-color: #45a049;
+}
+
+/* Add right to left styling for Arabic paragraphs */
+.arabic {
+    direction: rtl;
+    unicode-bidi: bidi-override;
+    text-align: right;
+}
+
+/* Add box-sizing property */
+* {
+    box-sizing: border-box;
+}
+
+/* Footer */
+.footer {
+    padding: 20px;
+    text-align: center;
+    margin-top: 20px;
+}

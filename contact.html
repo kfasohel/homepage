@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+    <head>
+        <!--meta informations-->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta property="og:title" content="Contact Me - Learn Arabic">
+
+        <!--Title of the Webpage-->
+        <title>Learn Arabic - Reboot Your Heart</title>
+
+        <!-- Add icon library -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+        <!--My css and favicon links-->
+        <link href="styles.css" rel="stylesheet">
+        <link rel="icon" type="image/x-icon" href="favicon.ico">
+
+        <!--Java script for alert messages for non-functional form and social media links-->
+        <script>
+            document.addEventListener("DOMContentLoaded", function() {
+                document.querySelector('#contactRequest').addEventListener('submit', function(e) {
+                    e.preventDefault();
+                    alert('Sorry! Not functional yet!');
+                });
+
+                document.querySelector('#facebook').addEventListener('mouseup', function(e) {
+                    e.preventDefault();
+                    alert('Not added yet!');
+                });
+
+                document.querySelector('#twitter').addEventListener('mouseup', function(e) {
+                    e.preventDefault();
+                    alert('Not added yet!');
+
+                });
+            });
+        </script>
+
+    </head>
+
+    <!--body of the webpage starts here-->
+
+    <body>
+        <!--Setup and Introductory part starts here-->
+        <header>
+            <!--Title with background image and subhead-->
+            <div class="header">
+                <br><br><br>
+                <h1>Learn Arabic</h1><br>
+                <h1>Reboot Your Heart</h1>
+                <br><br><br>
+            </div>
+
+            <!--Navigation bar including search form styled by bootstrap-->
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="articles.html">Articles</a></li>
+                <li><a class="active" href="contact.html">Contact</a></li>
+                <li><a href="about.html">About</a></li>
+            </ul>
+
+        </header>
+
+        <!--Start of Main Part of the body-->
+        <main>
+            <div class="row">
+                <div class="leftcolumn">
+                    <div class="card">
+                        <h2 style="color: powderblue ;">Contact Me</h2>
+                        <!--Add contact form with first name, last name, email and comments-->
+                        <form id="contactRequest">
+                            <label for="fname">First Name</label>
+                            <input type="text" id="fname" name="firstname" autofocus placeholder="Your first name..">
+
+                            <label for="lname">Last Name</label>
+                            <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+
+                            <label for="email">Email</label>
+                            <input type="email" required id="email" name="email" placeholder="Your email address.. 'Required'">
+
+                            <label for="subject">Subject</label>
+                            <textarea id="subject" name="subject" placeholder="Write something.." style="height:300px"></textarea>
+
+                            <input type="submit" value="Submit">
+                        </form>
+                    </div>
+                </div>
+
+                <div class="rightcolumn">
+                    <section class="card">
+                        <h3 style="color: powderblue ;">Hi! I'm Sohel</h3>
+                        <!--Add contact me message-->
+                        <p>Assalamu alaikum. Hope you are finding this blog useful for learning this amazing language. You can contact me for anything relating to this blog or learning arabic in general via submitting this form. I'll try to reply back to your given email address as soon as possible in sha'a Allah.</p>
+                    </section>
+
+                    <section class="card">
+                        <h3>Follow Me</h3>
+                        <!-- Add font awesome icons -->
+                        <a href="https://www.youtube.com/channel/UCU6RmvVS42P6LG1bvfzDFsg" class="fa fa-youtube" target="_blank"> </a>
+                        <a id="facebook" class="fa fa-facebook"> </a>
+                        <a id="twitter" class="fa fa-twitter"> </a>
+                    </section>
+
+                </div>
+
+            </div>
+
+        </main>
+
+        <!--Start of Footer part of the body-->
+        <footer>
+            <div class="footer">
+                <h6>&copy; All rights reserved</h6>
+            </div>
+        </footer>
+
+    </body>
+
+</html>

@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+    <head>
+        <!--meta informations-->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta property="og:title" content="About Me - Learn Arabic">
+
+        <title>About Me - Learn Arabic</title>
+
+        <!--Add font awesome icon library-->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+        <!--My css and favicon links-->
+        <link href="styles.css" rel="stylesheet">
+        <link rel="icon" type="image/x-icon" href="favicon.ico">
+
+        <!--Add javascript for non-functional social media icon alert messages-->
+        <script>
+            document.addEventListener("DOMContentLoaded", function() {
+                document.querySelector('#facebook').addEventListener('mouseup', function(e) {
+                    e.preventDefault();
+                    alert('Not added yet!');
+                });
+
+                document.querySelector('#twitter').addEventListener('mouseup', function(e) {
+                    e.preventDefault();
+                    alert('Not added yet!');
+
+                });
+            });
+        </script>
+
+    </head>
+
+    <body>
+        <!--Setup and Introductory part starts here-->
+        <header>
+
+            <!--Navigation bar including search form styled by bootstrap-->
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="articles.html">Articles</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a class="active" href="about.html">About</a></li>
+            </ul>
+
+        </header>
+
+        <!--Start of Main Part of the page-->
+        <main>
+            <!--Add heading and my picture-->
+            <div style="text-align: center;">
+                <h1>About Me</h1>
+                <img id="roundpic" src="mypic.JPG" alt="My Picture">
+            </div>
+
+            <!--Add some information about me-->
+            <div style="padding: 5px 40px;">
+                <p>
+                    Assalamu alaikum, everyone. I am K F A Sohel from Bangladesh. Learning Arabic was always my passion. But didn't manage the opportunity until very recently. For last six years, I've been a student of Arabic Language. And in this blog I'm going to share my roadmap in learning this wonderful language, so that if you are interested, you can find your way.
+                </p>
+                <!--Add a wish in Arabic-->
+                <h2 style="text-align: center; color:floralwhite;">رحلة سعيدة</h2>
+            </div>
+
+            <!--Add social media links-->
+            <div style="text-align: center;">
+                <h2>Follow Me</h2>
+                <a href="https://www.youtube.com/channel/UCU6RmvVS42P6LG1bvfzDFsg" class="fa fa-youtube" target="_blank"> </a>
+                <a id="facebook" class="fa fa-facebook"> </a>
+                <a id="twitter" class="fa fa-twitter"> </a>
+            </div>
+
+        </main>
+
+        <footer>
+            <div class="footer">
+                <h6>&copy; All rights reserved</h6>
+            </div>
+        </footer>
+
+
+    </body>
+
+</html>
